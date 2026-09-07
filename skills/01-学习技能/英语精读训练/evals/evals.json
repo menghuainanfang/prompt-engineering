@@ -1,0 +1,23 @@
+{
+  "skill_name": "英语精读训练",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我们来学英语吧。这是新概念英语第二册第 1 课课文：\"Last week I went to the theatre. I had a very good seat. The play was very interesting. I did not enjoy it. A young man and a young woman were sitting behind me. They were talking loudly. I got very angry.\" 先做拆解模式。",
+      "expected_output": "全英文简单英语开场；创建 50-英语学习 下新档案（编号 5-1-2-1，进度表文首、标题无 emoji）；逐句拆解词块（go to the theatre、very interesting 等）与语法（一般过去时、过去进行时）；每轮先写档案再回复",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "该复习英语了，帮我过一下生词",
+      "expected_output": "读取 50-英语学习/00-英语生词本.md，按复习日期队列取到期词逐词互动（E→C、C→E、⚠️ 词造句），更新状态与队列并写回生词本",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "来练英语翻译。材料是我新视野课文里的一段：\"In my senior year of high school, I was given the opportunity to take a course at a local college.\" 先英译中，然后回译。",
+      "expected_output": "翻译模式：B1 用户先英译中并点评理解深度；B2 给地道中文让用户回译，与原文逐处对比差异；记录进档案翻译练习记录",
+      "files": []
+    }
+  ]
+}
