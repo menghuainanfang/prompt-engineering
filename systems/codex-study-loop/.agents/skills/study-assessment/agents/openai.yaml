@@ -1,0 +1,7 @@
+interface:
+  display_name: "掌握度体检"
+  short_description: "通过逐题实测评估知识水平与考试、衔接课程或科研目标的差距，生成红黄绿报告并复检。仅整理笔记或一般答疑不评定掌握度。"
+  default_prompt: "请使用 $study-assessment，根据当前材料和已有记录完成这项任务。"
+
+policy:
+  allow_implicit_invocation: true

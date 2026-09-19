@@ -1,0 +1,7 @@
+interface:
+  display_name: "英语精读训练"
+  short_description: "新概念、新视野英语精读、回译、复述与词块复习，按真实输出调整训练。"
+  default_prompt: "请使用 $study-english，根据当前材料和已有记录完成这项任务。"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "学习笔记整理"
+  short_description: "保留原始要点，补齐知识逻辑链、逐模块笔记与完整串联讲义，按需生成费曼讲义。"
+  default_prompt: "请使用 $study-notes，根据当前材料和已有记录完成这项任务。"
+
+policy:
+  allow_implicit_invocation: true

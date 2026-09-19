@@ -1,0 +1,4 @@
+interface:
+  display_name: "学习闭环"
+  short_description: "协调 Codex、学习档案、Obsidian 与 Anki"
+  default_prompt: "使用 $study-loop 帮我把当前学习任务推进到理解、练习、笔记和复习闭环。"

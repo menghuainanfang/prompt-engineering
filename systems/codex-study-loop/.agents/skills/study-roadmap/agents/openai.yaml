@@ -1,0 +1,7 @@
+interface:
+  display_name: "课程大地图"
+  short_description: "规划或继续推进整门课程的学习路线，按前置依赖划分区域与据点，维护通关记录。仅学习一个概念或阅读一节材料时不建立课程地图。"
+  default_prompt: "请使用 $study-roadmap，根据当前材料和已有记录完成这项任务。"
+
+policy:
+  allow_implicit_invocation: true

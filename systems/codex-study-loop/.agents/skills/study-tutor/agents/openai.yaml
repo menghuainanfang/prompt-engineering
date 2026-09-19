@@ -1,0 +1,7 @@
+interface:
+  display_name: "渐进式交互学习"
+  short_description: "在 Codex 中渐进互动学习，保留断点并按需批量归档。"
+  default_prompt: "请使用 $study-tutor，根据当前材料和已有进度继续互动学习；默认只在聊天中教学，不逐轮写文档，仅在我要求归档时批量整理。"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "知识图谱与思维导图"
+  short_description: "将学习笔记转为可编辑思维导图与知识图谱，核对源内容、节点关系与预览。"
+  default_prompt: "请使用 $study-knowledge-visuals，根据当前材料和已有记录完成这项任务。"
+
+policy:
+  allow_implicit_invocation: true

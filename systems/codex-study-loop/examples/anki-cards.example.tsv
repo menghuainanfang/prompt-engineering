@@ -1,0 +1,3 @@
+Status	Front	Back	Tags	Deck	Source
+通过	什么证据支持把 mastery_level 标为 independent？	能在没有提示的情况下准确解释或完成同类任务。	学习系统::掌握度	学习闭环	systems/codex-study-loop/README.md
+候选	Anki 中的 Again/Hard 应如何回流？	先区分知识错误、迁移不足和卡片质量问题，再选择重学、变式练习或修卡。	学习系统::复习回流	学习闭环	systems/codex-study-loop/README.md

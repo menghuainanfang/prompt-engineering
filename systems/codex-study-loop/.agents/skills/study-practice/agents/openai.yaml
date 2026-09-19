@@ -1,0 +1,7 @@
+interface:
+  display_name: "习题互动训练"
+  short_description: "编排学完套、复习套或导入外来题，逐题引导数学解题与编程补全，并记录错因和复习。直接修复项目代码不当作编程练习。"
+  default_prompt: "请使用 $study-practice，根据当前材料和已有记录完成这项任务。"
+
+policy:
+  allow_implicit_invocation: true

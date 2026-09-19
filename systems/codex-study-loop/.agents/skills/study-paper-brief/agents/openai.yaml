@@ -1,0 +1,7 @@
+interface:
+  display_name: "论文总览拆解"
+  short_description: "一次性拆解论文的问题、方法、证明或实验、贡献及边界，提供术语和阅读路线，适用于论文总览与组会准备。逐段互动教学用渐进学"
+  default_prompt: "请使用 $study-paper-brief，根据当前材料和已有记录完成这项任务。"
+
+policy:
+  allow_implicit_invocation: true
