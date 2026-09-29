@@ -1,0 +1,7 @@
+interface:
+  display_name: "创意视觉与动画"
+  short_description: "创作海报、代码生成艺术、循环 GIF 或给成品应用主题样式。依据用户目标选择图像工具、程序绘图和输出格式，不默认套用特"
+  default_prompt: "请使用 $design-creative，根据当前项目和要求完成这项任务。"
+
+policy:
+  allow_implicit_invocation: true

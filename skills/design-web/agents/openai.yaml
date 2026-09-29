@@ -1,0 +1,7 @@
+interface:
+  display_name: "网页设计与验收"
+  short_description: "设计或重塑网页与交互应用，或用浏览器验证本地 Web 界面。按项目现有技术栈实现，检查响应式、关键交互和可访问性。"
+  default_prompt: "请使用 $design-web，根据当前项目和要求完成这项任务。"
+
+policy:
+  allow_implicit_invocation: true

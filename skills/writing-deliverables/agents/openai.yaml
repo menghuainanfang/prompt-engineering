@@ -1,0 +1,7 @@
+interface:
+  display_name: "结构化写作"
+  short_description: "起草或迭代技术方案、决策文档、项目汇报、周报与内部说明，按读者需求组织问题、证据和行动。学习笔记由学习笔记技能处理。"
+  default_prompt: "请使用 $writing-deliverables，根据当前项目和要求完成这项任务。"
+
+policy:
+  allow_implicit_invocation: true

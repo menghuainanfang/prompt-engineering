@@ -1,0 +1,7 @@
+interface:
+  display_name: "MCP 服务开发"
+  short_description: "为明确的外部服务或本地能力开发、调试 MCP 服务，设计可发现的工具、输入输出与实际协议测试。普通 API 调用或安装"
+  default_prompt: "请使用 $build-mcp，根据当前项目和要求完成这项任务。"
+
+policy:
+  allow_implicit_invocation: true

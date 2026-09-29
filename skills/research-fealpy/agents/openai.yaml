@@ -1,0 +1,7 @@
+interface:
+  display_name: "FEALPy 科研计算"
+  short_description: "使用 FEALPy 实现或调试有限元及相关 PDE 数值求解，检查变分形式、边界条件与误差。仅提到数学概念不强制选用 "
+  default_prompt: "请使用 $research-fealpy，根据当前项目和要求完成这项任务。"
+
+policy:
+  allow_implicit_invocation: true

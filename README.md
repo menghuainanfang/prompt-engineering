@@ -1,62 +1,98 @@
-# prompt-engineering
+# Prompt Engineering Workflows
 
-面向实际工作的 AI 提示词、Agent Skills 与工作流资产库。当前重点是可在 Codex 中运行的个人学习闭环；仓库也保留了早期 Claude Code 学习技能和独立网站提示词，便于比较与复用。
+面向实际任务的 Codex skills、工作流和提示词资产库。仓库只保存经过使用验证、适合公开复用的内容；运行状态、账号凭据、个人学习数据和工具缓存不进入版本控制。
 
-## 当前推荐：Codex 学习闭环
-
-[`systems/codex-study-loop`](systems/codex-study-loop/) 将目标规划、渐进教学、练习、评估、笔记、Obsidian 和 Anki 串成一条可恢复的学习流程：
-
-```text
-目标与通关证据
-  → 讲解与追问
-  → 无提示检验 / 变式练习
-  → 记录掌握证据
-  → 精炼长期笔记
-  → 审核 Anki 卡片
-  → 复习结果回流到重学、练习或修卡
-```
-
-它包含 9 个协作技能：
-
-| 技能 | 职责 |
-|---|---|
-| `study-loop` | 编排完整闭环、阶段收尾和复习回流 |
-| `study-roadmap` | 课程路线、前置依赖和据点状态 |
-| `study-tutor` | 概念或材料的渐进式互动教学 |
-| `study-practice` | 数学与编程的逐题训练、错因记录 |
-| `study-assessment` | 基于实测证据的掌握度评估 |
-| `study-notes` | 笔记整理、逻辑链和讲义化 |
-| `study-english` | 精读、翻译、复述和词块训练 |
-| `study-paper-brief` | 论文总览、术语和阅读路线 |
-| `study-knowledge-visuals` | Excalidraw、Canvas 或 Mermaid 知识图 |
-
-完整安装、路径配置、模板和 Anki 流程见 [系统说明](systems/codex-study-loop/README.md)。
-
-## 目录结构
+## 目录
 
 ```text
 prompt-engineering/
-├── systems/
-│   └── codex-study-loop/   # 当前推荐的完整学习闭环
-├── skills/                 # 早期 Claude Code 技能，作为历史版本保留
-├── prompts/                # 独立提示词
+├── skills/                    # 15 个 canonical skills，可直接安装
+├── workflows/
+│   ├── codex/                 # 全局工作原则
+│   └── study-loop/            # Obsidian/Anki 模板、脚本与示例
+├── prompts/
+│   └── personal-website/      # 个人网站美术方向与实现提示词
 ├── LICENSE
 └── README.md
 ```
 
-## 设计原则
+技能目录使用实际安装名，不维护中文编号镜像。一个技能只在 `skills/` 中保留一份权威版本；完整工作流通过链接组合技能、模板和脚本，不复制技能正文。
 
-- 以“能否独立解释、解题和迁移”为掌握依据，不用看过答案或完成数量代替能力证据。
-- 对话负责教学，学习主档案负责过程证据，Obsidian 负责长期知识，Anki 负责记忆调度；同一正文不在多处重复维护。
-- 默认在阶段收尾或明确请求时归档，不强制每轮聊天都写文件。
-- Anki 卡片先进入候选队列，经人工审核后再导出；脚本不直接修改 Anki 数据库。
-- 所有公开文件均使用可配置路径，不包含个人笔记、Anki 数据库、备份或账号凭据。
+## Skills
 
-Codex Skill 的目录结构和加载位置遵循 [OpenAI 官方技能文档](https://developers.openai.com/zh-Hans/docs/build-skills)。
+### 学习闭环
 
-## 历史版本
+| 技能 | 用途 |
+| --- | --- |
+| `study-loop` | 协调目标、教学、练习、档案、Obsidian 与 Anki 的完整闭环 |
+| `study-assessment` | 逐题实测掌握度，生成红黄绿缺口报告 |
+| `study-roadmap` | 按前置依赖建立课程区域、据点和通关记录 |
+| `study-tutor` | 渐进式交互学习概念、教材、论文和技术材料 |
+| `study-practice` | 编排学完套、复习套和逐题数学/编程训练 |
+| `study-notes` | 生成、补全或串联学习笔记与费曼讲义 |
+| `study-knowledge-visuals` | 生成可编辑的 Excalidraw、Canvas 或 Mermaid 知识图 |
+| `study-english` | 英语精读、翻译、回译、复述与词块复习 |
+| `study-paper-brief` | 一次性拆解论文问题、方法、证据、贡献与边界 |
 
-[`skills`](skills/) 是此前围绕 Claude Code 建立的学习技能体系，其中“每轮实时同步”等约定与当前闭环不同。新使用者建议从 `systems/codex-study-loop` 开始；旧目录暂不删除，以保留已有引用和迭代轨迹。
+### 研究、设计与交付
+
+| 技能 | 用途 |
+| --- | --- |
+| `research-fealpy` | 使用 FEALPy 实现和调试有限元及 PDE 数值求解 |
+| `build-mcp` | 为明确的服务或本地能力开发和测试 MCP 服务 |
+| `design-web` | 设计、重塑和浏览器验收网页与交互应用 |
+| `design-creative` | 海报、生成艺术、循环动画和产品主题设计 |
+| `writing-deliverables` | 技术方案、决策文档、项目汇报和内部说明 |
+| `codex-with-chatgpt` | 由 ChatGPT 负责规划/评审，Codex 保持执行所有权 |
+
+## 学习闭环
+
+`study-loop` 是统一入口，其他技能按任务调用：
+
+```text
+目标与现状
+  ├─ study-assessment → 找到真实缺口
+  ├─ study-roadmap    → 安排前置与路线
+  ├─ study-tutor      → 交互教学
+  ├─ study-practice   → 检索、迁移和复习
+  └─ study-notes / study-knowledge-visuals → 沉淀与连接知识
+```
+
+当前默认采用 `chat-deferred`：日常教学在对话中进行，用户要求实时保存或阶段归档时才写入学习档案。旧版“每轮强制同步”的 hook 已停用。
+
+[`workflows/study-loop`](workflows/study-loop/) 提供 Obsidian 模板、Anki 候选示例和导出脚本。它引用 `skills/` 中的学习技能，不维护第二套副本。
+
+## 独立提示词
+
+- [`prompts/personal-website/01_visual_art_direction_prompt.md`](prompts/personal-website/01_visual_art_direction_prompt.md)：个人网站视觉方向与审美审稿。
+- [`prompts/personal-website/02_codex_implementation_prompt.md`](prompts/personal-website/02_codex_implementation_prompt.md)：在既定视觉方向下完成工程实现和验收。
+
+## 安装 Skills
+
+在仓库根目录执行：
+
+```powershell
+$target = Join-Path $env:USERPROFILE '.codex\skills'
+New-Item -ItemType Directory -Path $target -Force | Out-Null
+Get-ChildItem -LiteralPath '.\skills' -Directory |
+  Copy-Item -Destination $target -Recurse -Force
+```
+
+Codex skill 的目录约定可参考 [OpenAI 官方技能文档](https://developers.openai.com/zh-Hans/docs/build-skills)。`workflows/codex/AGENTS.md` 是公开模板，使用前应阅读并按当前项目调整，不直接覆盖项目已有规则。
+
+## 仓库边界
+
+以下内容不会上传：
+
+- Codex 内置 `.system` skills；
+- `auth.json`、实时 `config.toml` 和其他账号或连接配置；
+- SQLite 状态库、会话、日志、锁文件、记忆和个人学习档案；
+- 插件缓存、临时文件、生成预览与本机运行产物；
+- 已被当前流程取代的旧 hook 和重复共享规范。
+
+## 维护方式
+
+本机 `~/.codex/skills` 是使用中的版本。技能经过实际任务验证后，将对应 canonical 目录同步到本仓库；重命名时删除旧目录，不保留兼容副本。工作流只保存跨技能的模板、脚本和说明，共享规则放在拥有它的技能 `references/` 中。
 
 ## 许可证
 
