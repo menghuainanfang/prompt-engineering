@@ -11,7 +11,8 @@ prompt-engineering/
 │   ├── codex/                 # 全局工作原则
 │   └── study-loop/            # Obsidian/Anki 模板、脚本与示例
 ├── prompts/
-│   └── personal-website/      # 个人网站美术方向与实现提示词
+│   ├── personal-website/      # 个人网站美术方向与实现提示词
+│   └── readingos/             # ReadingOS v0.1 中英实施任务书
 ├── LICENSE
 └── README.md
 ```
@@ -66,6 +67,8 @@ prompt-engineering/
 
 - [`prompts/personal-website/01_visual_art_direction_prompt.md`](prompts/personal-website/01_visual_art_direction_prompt.md)：个人网站视觉方向与审美审稿。
 - [`prompts/personal-website/02_codex_implementation_prompt.md`](prompts/personal-website/02_codex_implementation_prompt.md)：在既定视觉方向下完成工程实现和验收。
+- [`prompts/readingos/readingos-v0.1.zh-CN.md`](prompts/readingos/readingos-v0.1.zh-CN.md)：ReadingOS v0.1 中文开发提示词（需求任务书，应用尚未实施验收）。
+- [`prompts/readingos/readingos-v0.1.en.md`](prompts/readingos/readingos-v0.1.en.md)：对应的英文版本，包含参考项目、实现边界、验收和交付要求。
 
 ## 安装 Skills
 
